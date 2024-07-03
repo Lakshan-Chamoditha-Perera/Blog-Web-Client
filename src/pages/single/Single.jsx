@@ -1,8 +1,13 @@
 import React from 'react'
+import './single.css'
 
 const Single = () => {
   return (
-    <div>Single</div>
+    <div className='single'>
+      <div className='single_content'>
+
+      </div>
+    </div>
   )
 }
 

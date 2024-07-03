@@ -8,6 +8,7 @@ import Navbar from "./components/header/Navbar.jsx";
 import Footer from "./components/footer/Footer.jsx";
 
 import "./App.css";
+import Single from "./pages/single/Single.jsx";
 
 const Layout = () => {
     return (<>
@@ -25,7 +26,9 @@ const router = createBrowserRouter([{
         path: "/", element: <Home/>,
     }, {
         path: "/write", element: <Write/>,
-    },],
+    }, {
+        path: "/single", element: <Single/>,
+    }],
 }, {
     path: "/register", element: <Register/>,
 }, {

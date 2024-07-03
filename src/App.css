@@ -124,7 +124,7 @@ img {
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .section {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     padding: 0 13.33vw;
     margin:2.4rem auto;
     min-height: 85vh;

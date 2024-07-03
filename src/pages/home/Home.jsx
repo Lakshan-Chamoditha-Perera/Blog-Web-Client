@@ -4,8 +4,8 @@ import BlogCard from "../../components/card/BlogCard.jsx";
 
 const posts = [{
     id: 1,
-    title: "Blog 1",
-    desc: "lorem  ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    title: "Lorem ipsum dolor sit amet consectetur adipiscing elit",
+    desc: "lorem  ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     img: "https://images.pexels.com/photos/3225517/pexels-photo-3225517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
 }, {
     id: 2,
@@ -22,16 +22,15 @@ const posts = [{
     title: "Blog 4",
     desc: "This is a sample blog post",
     img: "https://images.pexels.com/photos/3225517/pexels-photo-3225517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-},]
-
+},];
 
 const Home = () => {
     return <div>
-        <h1>Home</h1>
         <div className='blog_grid'>
-
-            {posts.map((post, index) => (<BlogCard key={index} post={post} index={index}/>))}
-
+            {
+                posts.map((post, index) => (
+                    <BlogCard key={index} post={post} index={index}/>))
+            }
         </div>
     </div>;
 };
