@@ -4,8 +4,10 @@ import {TextField} from "@mui/material";
 
 const Login = () => {
     return (
-        <div className="container">
+        <div className="auth_container">
+
             <div className="content">
+                <h1 className={'section__title'}>Blogger</h1>
                 <div className="text-center">
                     <h1 className="title">Sign in to your account</h1>
                     <p className="subtitle">Enter your username and password below</p>
@@ -18,7 +20,7 @@ const Login = () => {
                             className="input"
                             required
                             type="text"
-                            id="username" label="Enter your username" variant="outlined" />
+                            id="username" label="Enter your username" variant="outlined"/>
                     </div>
                     <div className="form-group">
                         <p className="forgot-password">Forgot your password?</p>
@@ -31,7 +33,7 @@ const Login = () => {
                     </div>
 
                     <button className="button" type="submit">
-                    Sign in
+                        Sign in
                     </button>
                 </form>
 

@@ -125,12 +125,15 @@ img {
 /*=============== REUSABLE CSS CLASSES ===============*/
 .section {
     border: 1px solid red;
-    padding: 1.5rem 0;
+    padding: 0 13.33vw;
+    margin:2.4rem auto;
+    min-height: 85vh;
 }
 
 .section__title {
     /*border: 1px solid red;*/
-    padding-top: 2rem;
+    /*padding-top: 1rem;*/
+    margin-bottom: var(--mb-1);
     font-size: var(--big-font-size);
     color: var(--title-color);
 }
@@ -149,10 +152,10 @@ img {
 
 /*=============== LAYOUT ===============*/
 /*.container {*/
-/*  max-width: 1200px;*/
-/*  margin-left: auto;*/
-/*  margin-right: auto;*/
-/*  !*border: 2px solid black;*!*/
+/*    max-width: 1400px;*/
+/*    margin-left: auto;*/
+/*    margin-right: auto;*/
+/*    border: 1px solid red;*/
 /*}*/
 
 .grid {
@@ -184,7 +187,7 @@ img {
 
 @media screen and (max-width: 576px) {
     .section {
-        /*border: 1px solid blue;*/
+        border: 1px solid blue;
         padding: 1rem 0 1rem;
     }
 }

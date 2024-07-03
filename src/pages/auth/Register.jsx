@@ -2,8 +2,9 @@ import React from 'react'
 import {TextField} from "@mui/material";
 
 const Register = () => {
-    return (<div className="container">
+    return (<div className="auth_container">
         <div className="content">
+            <h1 className={'section__title'}>Blogger</h1>
             <div className="text-center">
                 <h1 className="title">Create an account</h1>
                 <p className="subtitle">Enter your email and password below</p>

@@ -11,14 +11,17 @@ import "./App.css";
 
 const Layout = () => {
     return (<>
-        <Navbar/>
-        <Outlet/>
+        <Navbar/>x
+        <section className='section'>
+            <Outlet/>
+        </section>
         <Footer/>
     </>);
 };
 
 const router = createBrowserRouter([{
-    path: "/", element: <Layout/>, children: [{
+    path: "/", element: <Layout/>,
+    children: [{
         path: "/", element: <Home/>,
     }, {
         path: "/write", element: <Write/>,
@@ -31,9 +34,7 @@ const router = createBrowserRouter([{
 
 function App() {
     return (<div className="app">
-        <div className="container">
-            <RouterProvider router={router}/>
-        </div>
+        <RouterProvider router={router}/>
     </div>);
 }
 

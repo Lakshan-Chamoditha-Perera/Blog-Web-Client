@@ -1,5 +1,5 @@
 /* SignInPage.css */
-.container {
+.auth_container {
     display: flex;
     min-height: 95vh;
     width: 100%;

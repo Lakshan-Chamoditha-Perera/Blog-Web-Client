@@ -1,0 +1,50 @@
+.header {
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+}
+
+.navbar {
+    padding: 0 13.33vw;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.nav__logo{
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: hsl(0, 0%, 10%);
+}
+
+.links__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 1.9rem;
+}
+
+.link{
+    color: var(--title-color);
+}
+
+.link:hover{
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.link::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: hsl(0, 0%, 10%);
+    transition: width 0.3s;
+}
+
+.link:hover::after{
+    width: 100%;
+}
