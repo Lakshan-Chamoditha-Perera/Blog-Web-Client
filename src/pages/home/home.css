@@ -1,0 +1,8 @@
+.blog_grid {
+    margin-bottom: var(--mb-1);
+    margin-top: var(--mb-1);
+    display: grid;
+    gap: 10rem;
+    justify-content: center;
+    align-items: center;
+}

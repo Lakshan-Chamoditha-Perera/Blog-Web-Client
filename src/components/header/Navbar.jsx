@@ -7,14 +7,14 @@ const categories = ["Science", "Technology", "Sports", "Entertainment", "Health"
 const Navbar = () => {
     return (<div className='header'>
             <div className="navbar">
-                <span className="nav__logo">Blog</span>
+                <a href='/' className="nav__logo">Blogger</a>
                 <ul className="links__container">
                     {categories.map((category) => (<span className="link">{category}</span>))}
                 </ul>
 
                 <div>
                 {/*    add new blog button*/}
-                    <Button size="small" variant="outlined">New Blog</Button>
+                    <Button size="small" href={'/write'} variant="outlined">New Blog</Button>
                 </div>
             </div>
         </div>);

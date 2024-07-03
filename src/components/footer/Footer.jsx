@@ -3,7 +3,6 @@ import "./footer.css";
 
 const Footer = () => {
     return (<footer className="footer">
-
         <div className="footer__container">
             <h1 className="footer__title">
                 BLOGGER

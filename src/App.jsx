@@ -4,8 +4,8 @@ import Home from "./pages/home/Home";
 import Register from "./pages/auth/Register";
 import Login from "./pages/auth/Login";
 import Write from "./pages/write/Write";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import Navbar from "./components/header/Navbar.jsx";
+import Footer from "./components/footer/Footer.jsx";
 
 import "./App.css";
 
