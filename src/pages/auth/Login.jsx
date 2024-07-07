@@ -4,6 +4,7 @@ import {TextField} from "@mui/material";
 import {useDispatch, useSelector} from "react-redux";
 import {loginStart} from "../../redux/userSlice.js";
 import axios from "axios";
+import {toast} from "react-toastify";
 
 const Login = () => {
     const user = useSelector((state) => state.users.user);
@@ -37,8 +38,10 @@ const Login = () => {
                 console.log(response.data);
                 if (response.data.success) {
                     console.log("Login successful");
+                    toast.success("Login successful");
                 } else {
                     console.log("Login failed:", response.data.message);
+                    toast.error(response.data.message);
                 }
             })
             .catch((error) => {
@@ -46,14 +49,18 @@ const Login = () => {
                 if (error.response) {
                     if (error.response.status === 404) {
                         console.log("User not found");
+                        toast.error("User not found");
                     } else if (error.response.status === 401) {
                         console.log("Invalid email or password");
+                        toast.error("Invalid email or password");
                     } else {
                         console.log("Server error:", error.response.data.message);
-
+                        toast.error(error.response.data.message);
                     }
+
                 } else {
                     console.log("Network error or server is down");
+                    toast.error("Network error or server is down");
                 }
 
             });
