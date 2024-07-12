@@ -9,7 +9,7 @@ const Navbar = () => {
             <div className="navbar">
                 <a href='/' className="nav__logo">BLOGGER</a>
                 <ul className="links__container">
-                    {categories.map((category) => (<span className="link">{category}</span>))}
+                    {categories.map((category,index) => (<span key={index}  className="link">{category}</span>))}
                 </ul>
 
                 <div>
